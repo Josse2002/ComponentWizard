@@ -1,0 +1,15 @@
+{
+    "🚀 Generar codigo de componente": {
+      "prefix": "component",
+      "body": [
+        "export function ${1:ComponentName}() {",
+        "    return (",
+        "        <div>",
+        "            <h1>Hola Mundo!</h1>",
+        "        </div>",
+        "    );",
+        "};"
+      ],
+      "description": "Generate a code template for a component react"
+    }
+  }

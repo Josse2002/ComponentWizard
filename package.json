@@ -1,0 +1,66 @@
+{
+  "name": "component-wizard",
+  "displayName": "Component Wizard",
+  "description": "It is an extension for Visual Studio Code designed to simplify and streamline the process of creating components in React projects. With a focus on productivity, ReactGen allows developers to easily generate component templates with a simple right-click on a React file in the file explorer.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "componentWizard.generarCodigo",
+        "title": "🚀 Generar componente"
+      },
+      {
+        "command": "componentWizard.crearComponente",
+        "title": "✨ Crear Componente"
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "command": "componentWizard.generarCodigo",
+          "group": "navigation",
+          "when": "resourceLangId == javascriptreact"
+        }
+      ],
+      "explorer/context": [
+        {
+          "command": "componentWizard.crearComponente",
+          "group": "navigation"
+        }
+      ]
+    },
+    "snippets": [
+      {
+        "language": "javascriptreact",
+        "path": "./snippets/snippets.json"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "yarn run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "yarn run compile && yarn run lint",
+    "lint": "eslint src --ext ts",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.85.0",
+    "@types/mocha": "^10.0.6",
+    "@types/node": "18.x",
+    "@typescript-eslint/eslint-plugin": "^6.15.0",
+    "@typescript-eslint/parser": "^6.15.0",
+    "eslint": "^8.56.0",
+    "typescript": "^5.3.3",
+    "@vscode/test-cli": "^0.0.4",
+    "@vscode/test-electron": "^2.3.8"
+  }
+}
