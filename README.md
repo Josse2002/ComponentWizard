@@ -18,7 +18,11 @@ Para generar automáticamente el código de un componente de React en el archivo
 
 Esto insertará el código de un componente de React en la posición actual del cursor. El nombre del componente será el nombre del archivo actual, con la primera letra en mayúsculas.
 
+![Create component](https://raw.githubusercontent.com/Josse2002/ComponentWizard/main/src/screenshots/Screenshot_25.png)
+
 ### Crear un nuevo componente
+
+![Create component](https://raw.githubusercontent.com/Josse2002/ComponentWizard/main/src/screenshots/Screenshot_24.png)
 
 Para crear un nuevo archivo de componente con una plantilla de código predefinida, sigue estos pasos:
 
