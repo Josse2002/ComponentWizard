@@ -3,8 +3,15 @@
   "displayName": "Component Wizard",
   "description": "It is an extension for Visual Studio Code designed to simplify and streamline the process of creating components in React projects. With a focus on productivity, ReactGen allows developers to easily generate component templates with a simple right-click on a React file in the file explorer.",
   "version": "0.0.1",
+  "publisher": "Josse",
+  "license": "MIT",
+  "icon": "./src/icon/logo.jpg",
   "engines": {
     "vscode": "^1.85.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Josse2002/ComponentWizard.git"
   },
   "categories": [
     "Other"

@@ -1,43 +1,41 @@
-# Welcome to your VS Code Extension
+# Component Wizard
 
-## What's in the folder
+Component Wizard es una extensión para Visual Studio Code diseñada para simplificar y agilizar el proceso de creación de componentes en proyectos de React. Con un enfoque en la productividad, Component Wizard permite a los desarrolladores generar fácilmente plantillas de componentes con un simple clic derecho en un archivo React en el explorador de archivos.
 
-* This folder contains all of the files necessary for your extension.
-* `package.json` - this is the manifest file in which you declare your extension and command.
-  * The sample plugin registers a command and defines its title and command name. With this information VS Code can show the command in the command palette. It doesn’t yet need to load the plugin.
-* `src/extension.ts` - this is the main file where you will provide the implementation of your command.
-  * The file exports one function, `activate`, which is called the very first time your extension is activated (in this case by executing the command). Inside the `activate` function we call `registerCommand`.
-  * We pass the function containing the implementation of the command as the second parameter to `registerCommand`.
+## Características
 
-## Get up and running straight away
+- Genera automáticamente el código de un componente de React en el archivo actual.
+- Crea un nuevo archivo de componente con una plantilla de código predefinida.
 
-* Press `F5` to open a new window with your extension loaded.
-* Run your command from the command palette by pressing (`Ctrl+Shift+P` or `Cmd+Shift+P` on Mac) and typing `Hello World`.
-* Set breakpoints in your code inside `src/extension.ts` to debug your extension.
-* Find output from your extension in the debug console.
+## Uso
 
-## Make changes
+### Generar código de componente
 
-* You can relaunch the extension from the debug toolbar after changing code in `src/extension.ts`.
-* You can also reload (`Ctrl+R` or `Cmd+R` on Mac) the VS Code window with your extension to load your changes.
+Para generar automáticamente el código de un componente de React en el archivo actual, sigue estos pasos:
 
-## Explore the API
+1. Abre el archivo en el que deseas generar el código.
+2. Haz clic con el botón derecho en el editor de código y selecciona "🚀 Generar componente".
 
-* You can open the full set of our API when you open the file `node_modules/@types/vscode/index.d.ts`.
+Esto insertará el código de un componente de React en la posición actual del cursor. El nombre del componente será el nombre del archivo actual, con la primera letra en mayúsculas.
 
-## Run tests
+![Create component](https://raw.githubusercontent.com/Josse2002/ComponentWizard/main/src/screenshots/Screenshot_25.png)
 
-* Install the [Extension Test Runner](https://marketplace.visualstudio.com/items?itemName=ms-vscode.extension-test-runner)
-* Run the "watch" task via the **Tasks: Run Task** command. Make sure this is running, or tests might not be discovered.
-* Open the Testing view from the activity bar and click the Run Test" button, or use the hotkey `Ctrl/Cmd + ; A`
-* See the output of the test result in the Test Results view.
-* Make changes to `src/test/extension.test.ts` or create new test files inside the `test` folder.
-  * The provided test runner will only consider files matching the name pattern `**.test.ts`.
-  * You can create folders inside the `test` folder to structure your tests any way you want.
+### Crear un nuevo componente
 
-## Go further
+![Create component](https://raw.githubusercontent.com/Josse2002/ComponentWizard/main/src/screenshots/Screenshot_24.png)
 
-* [Follow UX guidelines](https://code.visualstudio.com/api/ux-guidelines/overview) to create extensions that seamlessly integrate with VS Code's native interface and patterns.
- * Reduce the extension size and improve the startup time by [bundling your extension](https://code.visualstudio.com/api/working-with-extensions/bundling-extension).
- * [Publish your extension](https://code.visualstudio.com/api/working-with-extensions/publishing-extension) on the VS Code extension marketplace.
- * Automate builds by setting up [Continuous Integration](https://code.visualstudio.com/api/working-with-extensions/continuous-integration).
+Para crear un nuevo archivo de componente con una plantilla de código predefinida, sigue estos pasos:
+
+1. Haz clic con el botón derecho en el explorador de archivos en la carpeta donde deseas crear el nuevo componente.
+2. Selecciona "✨ Crear Componente".
+3. Introduce el nombre del nuevo componente en el cuadro de diálogo que aparece.
+
+Esto creará un nuevo archivo con el nombre que has introducido, y el archivo contendrá el código de un componente de React. El nombre del componente será el nombre que has introducido, tal como lo has escrito.
+
+## Contribuciones
+
+Las contribuciones son bienvenidas. Si encuentras algún problema o tienes alguna sugerencia, por favor abre un issue en el repositorio de GitHub de la extensión.
+
+## Licencia
+
+Component Wizard está licenciado bajo la licencia MIT.
